@@ -9,5 +9,37 @@
            <artifactId>commons-lang3</artifactId>
            <version>3.3.2</version>
        </dependency>
+       <dependency>
+           <groupId>junit</groupId>
+           <artifactId>junit</artifactId>
+           <version>3.8.1</version>
+           <scope>test</scope>
+       </dependency>
+ 
+       <!-- Servlet API - Servlet Library -->
+       <!-- http://mvnrepository.com/artifact/javax.servlet/javax.servlet-api -->
+        
+       <dependency>
+           <groupId>javax.servlet</groupId>
+           <artifactId>javax.servlet-api</artifactId>
+           <version>3.1.0</version>
+           <scope>provided</scope>
+       </dependency>
+        
+        
+       <!-- JSTL Library -->
+       <!-- http://mvnrepository.com/artifact/org.glassfish.web/javax.servlet.jsp.jstl -->
+ 
+       <dependency>
+           <groupId>org.glassfish.web</groupId>
+           <artifactId>javax.servlet.jsp.jstl</artifactId>
+           <version>1.2.4</version>
+           <exclusions>
+           	<exclusion>
+           		<groupId>javax.servlet</groupId>
+           		<artifactId>servlet-api</artifactId>
+           	</exclusion>
+           </exclusions>
+       </dependency>
    </dependencies>
 </project>
